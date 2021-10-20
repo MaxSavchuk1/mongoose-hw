@@ -7,3 +7,5 @@ mongoose
   .connect(`mongodb://${config.host}:${config.port}/${config.dbName}`)
   .then(data => console.log('Connected to MongoDB'))
   .catch(e => console.log(e));
+
+module.exports.Phone = require('./phone');
