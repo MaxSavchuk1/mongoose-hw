@@ -13,6 +13,10 @@ const phoneSchema = new Schema({
   manufactureYear: {
     type: Number,
     required: true,
+    validate: {
+      validator: Number.isInteger,
+      //   validator: year => year > 1984 && year <= new Date().getFullYear(),
+    },
   },
   ramSize: {
     type: Number,
@@ -27,6 +31,8 @@ const phoneSchema = new Schema({
     type: Boolean,
   },
 });
+
+phoneSchema.index({ brand: 1, model: 1 }, { unique: true });
 
 const Phone = mongoose.model('phones', phoneSchema);
 
