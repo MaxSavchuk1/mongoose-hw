@@ -15,17 +15,22 @@ const phoneSchema = new Schema({
     required: true,
     validate: {
       validator: Number.isInteger,
-      //   validator: year => year > 1984 && year <= new Date().getFullYear(),
     },
+    min: 1984,
+    max: new Date().getFullYear(),
   },
   ramSize: {
     type: Number,
+    min: 0.5,
+    max: 16,
   },
   processor: {
     type: String,
   },
   screenSize: {
     type: Number,
+    min: 1,
+    max: 10,
   },
   isHavingNfc: {
     type: Boolean,

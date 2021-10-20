@@ -7,8 +7,8 @@ Content-Type: application/json
 
 {   
     "brand": "Sony",
-    "model": "Xreria 2",
-    "manufactureYear": 2022,
+    "model": "Xreria 3",
+    "manufactureYear": 2021,
     "ramSize": 6,
     "processor": "Snapdragon 855",
     "screenDiagonal": 6.5,
