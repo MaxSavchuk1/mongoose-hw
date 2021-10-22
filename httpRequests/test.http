@@ -14,3 +14,16 @@ Content-Type: application/json
     "screenDiagonal": 6.5,
     "isHavingNFC": true
 }
+
+###
+GET http://localhost:5000/api/phones/616ff729beed92294078f39f
+
+###
+PATCH http://localhost:5000/api/phones/616ff729beed92294078f39f
+Content-Type: application/json
+
+{   
+    "brand": "Sonyy"
+}
+###
+DELETE http://localhost:5000/api/phones/61700dce51a884efd0ea67e8

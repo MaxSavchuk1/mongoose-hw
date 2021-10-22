@@ -7,6 +7,10 @@ phonesRouter
   .get(phoneController.getPhones)
   .post(phoneController.createPhone);
 
-phonesRouter.route('/:phoneId');
+phonesRouter
+  .route('/:phoneId')
+  .get(phoneController.getPhoneById)
+  .patch(phoneController.updatePhoneById)
+  .delete(phoneController.deletePhoneById);
 
 module.exports = phonesRouter;
