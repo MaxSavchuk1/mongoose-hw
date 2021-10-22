@@ -22,7 +22,7 @@ const phoneSchema = new Schema({
   ramSize: {
     type: Number,
     min: 0.5,
-    max: 16,
+    max: 128,
   },
   processor: {
     type: String,

@@ -8,7 +8,7 @@ module.exports.createPhone = async (req, res, next) => {
     const newPhoneInstance = new Phone(body);
     const createdPhone = await newPhoneInstance.save();
     if (createdPhone) {
-      return res.status(200).send({ data: createdPhone });
+      return res.status(201).send({ data: createdPhone });
     }
     next(createError(400, 'Bad request'));
   } catch (err) {
@@ -22,5 +22,26 @@ module.exports.getPhones = async (req, res, next) => {
     res.status(200).send({ data: foundPhones });
   } catch (err) {
     next(err);
+  }
+};
+
+module.exports.getPhoneById = async (req, res, next) => {
+  try {
+  } catch (e) {
+    next(e);
+  }
+};
+
+module.exports.updatePhoneById = async (req, res, next) => {
+  try {
+  } catch (e) {
+    next(e);
+  }
+};
+
+module.exports.deletePhoneById = async (req, res, next) => {
+  try {
+  } catch (e) {
+    next(e);
   }
 };
