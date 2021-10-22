@@ -8,7 +8,7 @@ Content-Type: application/json
 {   
     "brand": "Sony",
     "model": "Xreria 1",
-    "manufactureYear": 2021,
+    "manufactureYear": 201,
     "ramSize": 6,
     "processor": "Snapdragon 855",
     "screenDiagonal": 6.5,
@@ -16,10 +16,10 @@ Content-Type: application/json
 }
 
 ###
-GET http://localhost:5000/api/phones/616ff729beed92294078f39f
+GET http://localhost:5000/api/phones/123
 
 ###
-PATCH http://localhost:5000/api/phones/616ff729beed92294078f39f
+PATCH http://localhost:5000/api/phones/616ff948f39f
 Content-Type: application/json
 
 {   

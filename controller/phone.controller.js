@@ -47,7 +47,7 @@ module.exports.updatePhoneById = async (req, res, next) => {
   } = req;
   try {
     const updatedPhone = await Phone.findByIdAndUpdate(phoneId, body, {
-      new: true,
+      new: true, //так возвращает измененные данные, а не предыдущие
     });
     if (updatedPhone) {
       return res.status(200).send({ data: updatedPhone });
