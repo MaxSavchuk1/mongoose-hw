@@ -67,7 +67,7 @@ module.exports.deletePhoneById = async (req, res, next) => {
     if (deletedPhone) {
       return res.status(200).send({ data: deletedPhone });
     }
-    next(createError(404, 'User not found'));
+    next(createError(404, 'Phone not found'));
   } catch (e) {
     next(e);
   }
